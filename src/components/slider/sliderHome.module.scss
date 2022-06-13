@@ -1,0 +1,47 @@
+@import "./../../styles/variables.scss";
+
+.container {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    &__items {
+        height: 100%;
+        display: flex;
+
+        transition: translate;
+        transition-property: transform;
+        transition-duration: .5s;
+        transition-timing-function: ease-in-out;
+    }
+}
+
+.window {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.arrow__left {
+    position: absolute;
+    bottom: -376px;
+    height: 30px;
+    color: rgba(gray, .8);
+    cursor: pointer;
+    z-index: 100;
+
+    path {
+        border: 2px solid white;
+    }
+}
+
+.arrow__right {
+    position: absolute;
+    right: 42px;
+    bottom: -376px;
+    height: 30px;
+    color: rgba(gray, .8);
+    cursor: pointer;
+    z-index: 100;
+}

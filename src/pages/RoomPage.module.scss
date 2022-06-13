@@ -1,0 +1,132 @@
+@import "./../styles/variables";
+
+.main__container {
+    width: 100%;
+    padding: 1.5rem;
+    background: $bg;
+}
+
+.container {
+    width: 100%;
+    padding: 1.5rem;
+    background: $light;
+    margin-bottom: .5rem;
+    padding: 1rem;
+    border-radius: $borderRadius;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media (max-width: 760px) {
+        flex-direction: column;
+    }
+}
+
+.img {
+    width: 40%;
+
+    @media (max-width: 760px) {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+.content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+    @media (max-width: 760px) {
+        width: 100%;
+    }
+
+    button {
+        width: 200px;
+        padding: .8rem;
+        border-radius: $borderRadius;
+        border: 2px solid rgb(36, 37, 51);
+        background: $bg;
+        font-size: 1.2rem;
+
+        transition: .2s linear all;
+
+        &:hover {
+            background: $primary;
+            border: 3px solid rgb(36, 37, 51);
+        }
+    }
+}
+
+.description {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &__item {
+        width: 20%;
+
+        &:last-child {
+            width: 80%;
+        }
+    }
+}
+
+.modalrequest {
+    width: 100%;
+
+    h1 {
+        text-align: center;
+    }
+
+    h5 {
+        margin: 0;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+
+    &__input {
+        width: 100%;
+        margin-top: .5rem;
+        margin-bottom: 1rem;
+        padding: .5rem;
+        border-radius: $borderRadius;
+        border: 1px solid $primary;
+    }
+
+    textarea {
+        height: 150px;
+    }
+
+    button {
+        width: 200px;
+        padding: .8rem;
+        border-radius: $borderRadius;
+        border: 2px solid rgb(36, 37, 51);
+        background: $bg;
+        font-size: 1.2rem;
+
+        transition: .2s linear all;
+
+        &:hover {
+            background: $primary;
+            border: 3px solid rgb(36, 37, 51);
+        }
+    }
+    
+}

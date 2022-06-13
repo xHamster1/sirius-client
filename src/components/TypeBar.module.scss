@@ -1,0 +1,29 @@
+@import "./../styles/variables";
+
+
+.typebar {
+    width: 100%;
+
+    @media (max-width: 760px) {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__item {
+        padding: .5rem;
+        margin-top: .5rem;
+        border-radius: $borderRadius;
+        transition: .3s linear all;
+
+        @media (max-width: 760px) {
+            margin-top: 0;
+            text-align: center;
+        }
+
+        &:hover {
+            cursor: pointer;
+            background: $primary;
+            color: $light;
+        }
+    }
+}

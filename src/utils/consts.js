@@ -1,0 +1,5 @@
+export const ADMIN_ROUTE = '/admin'
+export const LOGIN_ROUTE = '/auth'
+export const RENT_ROUTE = '/rent'
+export const ROOM_ROUTE = '/roompage'
+export const HOME_ROUTE = '/'

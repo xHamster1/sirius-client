@@ -1,0 +1,105 @@
+@import "./../styles/variables";
+
+.intro {
+    width: 100%;
+    height: 600px;
+    background: $intro;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+
+    &__content {
+        position: relative;
+        width: 48%;
+        top: -155%;
+        padding-left: 3rem;
+        color: $light;
+
+        @media (max-width: 1200px) {
+            top: -120%;
+        }
+
+        @media (max-width: 1000px) {
+            top: -100%;
+        }
+
+        @media (max-width: 900px) {
+            top: -60%;
+        }
+        
+        h2 {    
+            font-family: inherit;
+            font-size: 4rem;
+            letter-spacing: .2rem;
+            text-transform: uppercase;
+            
+            @media (max-width: 900px) {
+                font-size: 3rem;
+            }
+        }
+
+        p {
+            margin-top: .3rem;
+            font-size: 2rem;
+
+            @media (max-width: 900px) {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    &__light {
+        position: relative;
+        top: -40px;
+        left: -450px;
+        transform: rotate(60deg);
+        width: 1500px;
+        height: 180%;
+        background: rgba($light_orange, .7);
+
+        @media (max-width: 1200px) {
+            height: 150%;
+        }
+
+        @media (max-width: 1000px) {
+            height: 130%;
+        }
+
+        @media (max-width: 900px) {
+            height: 100%;
+            left: -550px;
+        }
+
+        &__dark {
+            position: relative;
+            left: -770px;
+            top: 63px;
+            transform: rotate(0deg);
+            width: 1500px;
+            height: 180%;
+            background: rgba(0,0,0, .8);
+
+            @media (max-width: 1200px) {
+                height: 150%;
+                left: -620px;
+                top: 150px;
+                transform: rotate(89deg);
+            }
+
+            @media (max-width: 1000px) {
+                height: 130%;
+                left: -635px;
+                top: 63px;
+                transform: rotate(0deg);
+            }
+
+            @media (max-width: 900px) {
+                height: 100%;
+                left: -510px;
+            }
+        }
+    }
+
+
+}
